@@ -140,10 +140,20 @@
                     </p>
                     <hr/>
                     <div class="level-buttons center-text">
-                        <button class="level-modifier" data-direction='-1' onClick="alert('3');">
-                            <i class="fa fa-dice extra-large-text"></i>
-                        </button>
+                        <a href="#" onClick="$('#dice-result').html('4');$('#myModal').foundation('reveal', 'open');">
+                            <button class="level-modifier" data-direction='-1'>
+                                <i class="fa fa-dice extra-large-text"></i>
+                            </button>
+                        </a>
                     </div>
+
+                    <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                        <h2 id="modalTitle">You rolled a D6!</h2>
+                        <p class="lead">The result of your roll was:</p>
+                        <p id="dice-result">3</p>
+                        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -151,6 +161,12 @@
 
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="js/foundation.min.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
         <script src="js/main.js"></script>
+
+
+        <script>
+            $(document).foundation();
+        </script>
     </body>
 </html>
