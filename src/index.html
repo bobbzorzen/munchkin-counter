@@ -34,7 +34,7 @@
 
                 <div class="small-12 column name-field center-text">
                     <p>
-                        <span id='current-user'>Bobbzorzen</span> (<a id='current-gender' href="#">Male</a>)
+                        <span id='current-user'>&lt;Name here&gt;</span> (<a id='current-gender' href="#">Male</a>)
                     </p>
                 </div>
 
@@ -64,7 +64,7 @@
                         <span><div class="button gear-modifier hide-for-small">-3</div></span>
                         <span><div class="button gear-modifier">-1</div></span>
 
-                        <span id="current-gear" class='medium-margin'>1</span>
+                        <span id="current-gear" class='medium-margin'>0</span>
                         
                         <span><div class="button gear-modifier">+1</div></span>
                         <span><div class="button gear-modifier hide-for-small">+3</div></span>
@@ -93,7 +93,7 @@
                                 Total
                             </p>
                             <hr/>
-                            <p id="current-level" class="center-text">
+                            <p id="current-power" class="center-text">
                                 1
                             </p>
                         </div>
@@ -119,30 +119,28 @@
                         Switch player
                     </p>
                     <hr/>
-                    <ul class="small-block-grid-3 center-text">
-                        <li><a href="#">Bobbzorzen(10)</a></li>
-                        <li><a href="#" class="selected-player">Bobbzorzen(10)</a></li>
-                        <li><a href="#">Bobbzorzen(10)</a></li>
+                    <ul class="small-block-grid-3 center-text" id='playerList'>
+                        <li style='visibility: hidden'><a href="#" class="selected-player">placeholder</a></li>
                     </ul>
-                    <div class="level-buttons center-text">
-                        <div class="button level-modifier" data-direction='-1'>
+                    <div class="step-user-buttons center-text">
+                        <div class="button step-user" data-direction='-1'>
                             <i class="fa fa-chevron-circle-left extra-large-text"></i>
                         </div>
-                        <div class="button level-modifier" data-direction='-1'>
+                        <div class="button step-user" data-direction='1'>
                             <i class="fa fa-chevron-circle-right extra-large-text"></i>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row collapse container">
-                <div class="small-12 column players-field">
+                <div class="small-12 column dice-field">
                     <p class="large-text center-text">
                         Roll dice
                     </p>
                     <hr/>
-                    <div class="level-buttons center-text">
-                        <a href="#" onClick="$('#dice-result').html('4');$('#myModal').foundation('reveal', 'open');">
-                            <div class="button level-modifier" data-direction='-1'>
+                    <div class="dice-buttons center-text">
+                        <a href="#">
+                            <div class="button dice-button" data-faces='6'>
                                 <i class="fa fa-dice extra-large-text"></i>
                             </div>
                         </a>
@@ -163,8 +161,8 @@
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
         <script src="js/foundation.min.js"></script>
         <script src="js/foundation/foundation.reveal.js"></script>
+        <script src="js/Player.js"></script>
         <script src="js/main.js"></script>
-
 
         <script>
             $(document).foundation();
