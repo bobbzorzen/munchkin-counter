@@ -1,0 +1,156 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/custom-font-icons.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            
+            <div class="row collapse container">
+
+                <div class="small-12 column add-player-field">
+                    <button class="button radius full-width">
+                        Add Player
+                    </button>
+                </div>
+
+                <div class="small-12 column name-field center-text">
+                    <p>
+                        <span id='current-user'>Bobbzorzen</span> (<a id='current-gender' href="#">Male</a>)
+                    </p>
+                </div>
+
+                <div class="small-12 column level-field">
+                    <p class="large-text center-text no-margin">Level</p>
+                    <hr/>
+                    <div class="level-buttons center-text">
+                        <span><button class="level-modifier hide-for-small-down">-5</button></span>
+                        <span><button class="level-modifier hide-for-small-down">-3</button></span>
+                        <span><button class="level-modifier">-1</button></span>
+
+                        <span id="current-level" class='medium-margin'>1</span>
+                        
+                        <span><button class="level-modifier">+1</button></span>
+                        <span><button class="level-modifier hide-for-small">+3</button></span>
+                        <span><button class="level-modifier hide-for-small">+5</button></span>
+                    </div>
+                </div>
+
+                <div class="small-12 column gear-field">
+                    <p class="large-text center-text no-margin">
+                        Gear
+                    </p>
+                    <hr/>
+                    <div class="gear-buttons center-text">
+                        <span><button class="gear-modifier hide-for-small">-5</button></span>
+                        <span><button class="gear-modifier hide-for-small">-3</button></span>
+                        <span><button class="gear-modifier">-1</button></span>
+
+                        <span id="current-gear" class='medium-margin'>1</span>
+                        
+                        <span><button class="gear-modifier">+1</button></span>
+                        <span><button class="gear-modifier hide-for-small">+3</button></span>
+                        <span><button class="gear-modifier hide-for-small">+5</button></span>
+                    </div>
+                </div>
+
+                <div class="small-12 column stats-field">
+                    <div class="row collapse">
+                        <div class="small-4 column">
+                            <p class="center-text large-text no-margin">
+                                Race
+                            </p>
+                            <hr/>
+                            <select id="races">
+                                <option value="human">Human</option>
+                                <option value="elf">Elf</option>
+                                <option value="dwarf">Dwarf</option>
+                                <option value="halfling">Halfling</option>
+                                <option value="gnome">Gnome</option>
+                                <option value="orc">Orc</option>
+                            </select>
+                        </div>
+                        <div class="small-4 column">
+                            <p class="center-text large-text no-margin">
+                                Total
+                            </p>
+                            <hr/>
+                            <p id="current-level" class="center-text">
+                                1
+                            </p>
+                        </div>
+                        <div class="small-4 column">
+                            <p class="center-text large-text no-margin">
+                                Class
+                            </p>
+                            <hr/>
+                            <select id="classes">
+                                <option value="">N/A</option>
+                                <option value="theif">Theif</option>
+                                <option value="warrior">Warrior</option>
+                                <option value="cleric">Cleric</option>
+                                <option value="wizard">Wizard</option>
+                                <option value="bard">Bard</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="small-12 column players-field">
+                    <p class="large-text center-text">
+                        Switch player
+                    </p>
+                    <hr/>
+                    <ul class="small-block-grid-3 center-text">
+                        <li><a href="#">Bobbzorzen(10)</a></li>
+                        <li><a href="#" class="selected-player">Bobbzorzen(10)</a></li>
+                        <li><a href="#">Bobbzorzen(10)</a></li>
+                    </ul>
+                    <div class="level-buttons center-text">
+                        <button class="level-modifier" data-direction='-1'>
+                            <i class="fa fa-chevron-circle-left extra-large-text"></i>
+                        </button>
+                        <button class="level-modifier" data-direction='-1'>
+                            <i class="fa fa-chevron-circle-right extra-large-text"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row collapse container">
+                <div class="small-12 column players-field">
+                    <p class="large-text center-text">
+                        Roll dice
+                    </p>
+                    <hr/>
+                    <div class="level-buttons center-text">
+                        <button class="level-modifier" data-direction='-1' onClick="alert('3');">
+                            <i class="fa fa-dice extra-large-text"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+        <script src="js/foundation.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
